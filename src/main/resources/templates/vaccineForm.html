@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>User Registration</h1>
+        <form action="./vaccineForm" method="post">
+            <label for="idDetails">ID Details:</label>
+            <input type="text" id="idDetails" name="idDetails" required>
+
+            <label for="idType">ID Type:</label>
+            <select id="idType" name="idType" required>
+                <option value="Aadhar">Aadhar</option>
+                <option value="Pancard">Pancard</option>
+            </select>
+
+            <label for="FirstName"> FirstName:</label>
+            <input type="text" id="FirstName" name="FirstName" required>
+            
+            <label for="LastName">LastName:</label>
+            <input type="text" id="LastName" name="LastName" required>
+
+            <label for="contactNumber">Contact Number (10 digits):</label>
+            <input type="tel" id="contactNumber" name="contactNumber" pattern="[0-9]{10}" required>
+
+            <label for="vaccineName">Vaccine Name:</label>
+            <select id="vaccineName" name="vaccineName">
+                <option value="Covaxin">Covaxin</option>
+                <option value="Covishield">Covishield</option>
+                <option value="Sputnik">Sputnik</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
